@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .video-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Car Showroom</h1>
+</header>
+
+<div class="container">
+
+    <h2>Car Ownership Form</h2>
+    <form action="#">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="contact">Contact Number:</label>
+        <input type="text" id="contact" name="contact" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="car">Select Car Model:</label>
+        <select id="car" name="car">
+            <option value="porsche">Porsche 911</option>
+            <option value="bmw">BMW M4</option>
+            <option value="audi">Audi R8</option>
+            <option value="mercedes">Mercedes-Benz AMG</option>
+        </select>
+
+        <label for="message">Additional Requests:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Video Clip Section</h2>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/0Jp6_H4JE_4?si=HLeyISWDKgzFa4k3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <h2>Featured Car</h2>
+    <img src="https://t4.ftcdn.net/jpg/04/20/38/41/240_F_420384111_5fzxWlWxvB7bg5BROxfKdBbgBYB2TwGP.jpg" alt="Featured Car Image">
+
+    <h2>Table Section</h2>
+    <table>
+        <tr>
+            <th>Car Model</th>
+            <th>Description</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Porsche 911</td>
+            <td>Luxury sports car with high performance</td>
+            <td>$120,000</td>
+        </tr>
+        <tr>
+            <td>BMW M4</td>
+            <td>High-performance coupe with sleek design</td>
+            <td>$80,000</td>
+        </tr>
+        <tr>
+            <td>Audi R8</td>
+            <td>Powerful V10 engine with modern tech</td>
+            <td>$150,000</td>
+        </tr>
+        <tr>
+            <td>Mercedes-Benz AMG</td>
+            <td>Luxury and performance combined</td>
+            <td>$130,000</td>
+        </tr>
+    </table>
+
+</div>
+
+</body>
+</html>
